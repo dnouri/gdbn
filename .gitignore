@@ -1,0 +1,7 @@
+*.pyc
+bin/
+dist/
+gdbn.egg-info/
+include/
+lib/
+local/

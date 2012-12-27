@@ -23,7 +23,7 @@
 
 import numpy as num
 import itertools
-from dbn import *
+from gdbn.dbn import *
 
 def numMistakes(targetsMB, outputs):
     if not isinstance(outputs, num.ndarray):
