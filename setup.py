@@ -6,7 +6,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.txt')).read()
 
 setup(name='gdbn',
-      version='0.1',
+      version='0.2dev',
       description="Pre-trained deep neural networks",
       long_description=README,
       author='George Dahl',
