@@ -65,13 +65,11 @@ def main():
     
     for ep, (trCE, trEr) in enumerate(net.fineTune(mbStream, epochs, mbPerEpoch, numMistakes, True)):
         print ep, trCE, trEr
-    
 
-    
-    
-
-    
-    
+    outputs = tuple(net.predictions(testInps))
+    outputs = num.array(outputs).reshape(testInps.shape[0], -1)
+    print "Test error rate:", numMistakes(
+        testTargs, outputs) / float(testInps.shape[0])
 
 
 if __name__ == "__main__":
